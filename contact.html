@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<!--Mobile First-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="Logo_swapu.png"/>
+	<!-- Bootstrap minified css file -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<!-- Custom css file -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#left_margin {
+			margin-left: 10%;
+		}
+
+		#map {
+        height: 400px;
+        width: 100%;
+       }
+       a:link {
+       	
+       }
+       
+       
+	</style>
+</head>
+<body>
+<header>
+	<div class="well">
+		<div class="container">
+		<div class="row">
+		<div class="col-md-8">
+			<a href="index.html" ><h2 style="font-family:georgia;font-size:3em;padding-left:5px"><img src="Logo_swapu.png" height="10%" width="10%">Swapu Information and Technology</h2></a>
+		</div>
+		</div>
+			<div class="col-lg-3 col-lg-offset-9 col-md-4 col-md-offset-8 col-sm-6 col-sm-offset-6 col-xs-12">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search for ..." >
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+					</span>  
+				</div>
+			</div>
+		</div>
+	</div>	
+</header>
+
+<!--Navigation Bar -->
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about us.html">About Us</a></li>
+		<li class="active"><a href="contact.html">Contact</a></li>
+	</ul>
+</div>
+
+<hr>
+<div>
+<h1 id="left_margin"><font face="inherit" size="20px"><strong>Let's Talk</strong></font></h1>
+</div>
+<!--Google Map-->
+<div id="map"></div>
+<!--Write to us-->
+<br>
+<div>
+<h3 id="left_margin"><strong><font face="inherit"> Write to us</font></strong></h3>
+</div>
+
+<div class="container">
+	<div class="col-md-6">
+	<form method="post" action="user_message.php">
+		<div class="form-group">
+		<input type="text" class="form-control" name="fullname" placeholder="Full Name">
+		</div>
+		<div class="form-group">
+		<input type="text" class="form-control" name="email" placeholder="Email Address">
+		</div>
+		<div class="form-group">
+		<textarea rows="4" class="form-control" name="textarea" placeholder="Enter Your Message Here"></textarea>
+		</div>
+		<button type="submit" class="btn btn-default" name="submit">Submit</button>
+	</form>	
+	</div>
+	<div class="col-md-6">
+		<div class="col-md-3" style="margin-left: 20%">
+			<div>
+				<img src="img/mail.png">
+				<br>
+				<a href="#">info@xyz.com</a>
+			</div>
+			<br><br>
+			<div>
+				<img src="img/location.png">
+				<br>
+				<div style="white-space: nowrap;">
+				Naxal,<br>Kathmandu, Nepal
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3" style="margin-left: 20%">
+			<div>
+				<img src="img/call.png">
+				<br>
+				<div style="white-space: nowrap;">
+				+977-9849920293	
+				</div>			
+			</div>
+			<br><br>
+			<div>
+				<img src="img/time.png">
+				<br>
+				<div style="white-space: nowrap;">
+				09:00 AM - 06:00 PM</div><div style="white-space: nowrap;">06:30 PM - 03:30 AM</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<!--Footer-->
+<footer>
+	<div class="well">
+		<div class="container">
+
+			<hr>
+
+			<p>
+			<small class="col-md-6"><span style="font-size:15px;"><strong>&copy; Copyright 2018</span></strong> Information and Technology Limited</small>
+			<span class="col-md-offset-5" >
+			<small><a href="http://facebook.com" title="facebook"><img src="img\facebook.png"></a></small>
+			<small><a href="http://twitter.com" title="twitter"><img src="img\twitter.jpg"> </a></small>
+			<small><a href="http://youtube.com" title="youtube"><img src="img\youtube.png"></a></small>
+			</span>
+			</p>
+		</div> <!-- end container -->
+	</div>
+</footer>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap Javascript file -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
+    <!--Custom Javascript file-->
+    <script type="text/javascript" src="javascript.js"></script>
+    <!--Google Map API-->
+     <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBNZlrQMBRrdAqj0_MmZB8-fWp0gpXn8o&callback=initMap">
+    </script>
+</body>
+</html>
